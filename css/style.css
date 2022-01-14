@@ -1,0 +1,259 @@
+
+.container-info{
+    /* width: 100%;
+max-width: 1440px;
+margin: 0 auto; */
+margin-top: 10px;
+margin-bottom: 65px;
+}
+.collection_statement
+{
+    color: #66665c;
+    padding: .625em;
+    margin-top: 0;
+    border: solid #b4b4b4 .0625em;
+    max-width:100%; width: auto; background:#ffffff; margin: auto; font-size:0.85em;
+}
+.collection_statement p
+{
+    color: #66665c;
+
+}
+.collection_statement a
+{
+    color: red;
+
+}
+.alert_text{
+    color: red;
+}
+.container-info-conatiner{
+    padding: 0px;
+}
+.footer-top
+{
+    text-align: center;
+}
+section#block-footerbottomtextfirst {
+    color: #fff;
+    max-width: 760px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.msf-fotter {
+    padding: 0;
+    background-color: #262626;
+    border: 0 none;
+    margin-top: 0;
+    padding: 30px 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #fff;
+}
+#block-footerbottomtext {
+    display: inline-block;
+    width: 100%;
+    vertical-align: bottom;
+    background-color: #000;
+    padding: 13px 0;
+    margin-top: 18px;
+    border-top: 2px solid #ef4135;
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+.fotter_menu{
+    display: inline-flex;
+}
+.fotter_menu li a{
+    color: #fff;
+}
+.fotter_menu li h2
+{
+    color: #fff;
+    font-size: 19px;
+    margin: 0;
+}
+#block-footerbottomtextfirst p{  
+    color: #fff;
+}
+.fotter_menu li a
+{
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px;
+    width: 38px;
+    height: 38px;
+    /* line-height: 42px; */
+    text-align: center;
+    margin-left: 10px;
+}
+.fotter_menu li a:hover
+{
+    background-color: #151414;
+}
+#block-footerbottomtext a{
+    color: #fff;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.copyright{
+    text-align: right;
+}
+.msf-red-btn
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-size: 1.25rem;
+    background: #EE0000;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: none;
+    padding: 14px 0;
+    text-transform: uppercase;
+    font-family: "Oswald","Helvetica","Arial",sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    width: 100%;
+}
+#edit-submitted-donation-recurs-monthly input:checked + label::after {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 50%;
+    line-height: 1;
+    font-size: 30px;
+    margin-right: -9px;
+    font-family: "Font Awesome 5 Free";
+    color: #EE0000;
+    content: "\f0d7";
+    font: normal normal normal 27px/1 FontAwesome;
+}
+.custom_container > div.container{
+    margin-top:0px !important;
+    box-shadow: 0 9px 15px #888 !important;
+}
+.custom_container{
+    margin-top: 0px !important;
+}
+.node-donation-form select, .node-webform select, .ecard-form .webform-client-form select
+{
+    height: 50px;
+    border: 2px solid black;
+    padding: 4px !important;
+}
+.form_radio{
+    font-size: 19px;
+    color: #231F20;
+    font-family: "Avenir","Helvetica","Arial",sans-serif;
+    font-weight: 700;
+    line-height: 1.71429;
+}
+.form-heading-p {
+    font-size: 13px;
+    line-height: 140%;
+    color: #231F20;
+    font-weight: lighter;
+    font-family: "Avenir","Helvetica","Arial",sans-serif;
+}
+.form-label{
+    margin-top: 15px;
+}
+.new_one label, .new_two label
+{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding-right: 30px;
+    margin-top: 2px;
+}
+.form-actions {
+    margin: 20px 0 0 0px;
+}
+.postal{
+    margin-bottom: 0px !important;
+}
+#edit-submit{
+    margin: 20px 0 0 15px;
+}
+#donation--other-amount, #donation--other-amount1{
+    max-width: 100% !important;
+}
+#donation--other-amount label, #donation--other-amount1 label{
+    margin-top: 0px !important;
+}
+.fieldset-legend-heading{
+    font-size: 25px;
+    color: #231F20;
+    font-family: "Avenir","Helvetica","Arial",sans-serif;
+    font-weight: 700;
+    line-height: 1.71429;
+    opacity: 1;
+    margin-left: 15px;
+}
+.form-title h1{
+    font-size: 54px;
+    margin-bottom: 14px;
+}
+.form-title h1 p{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 15px;
+}
+.form-label-1{}
+@media (max-width:600px){
+    .form-title h1 p{
+        color: #000;
+        font-size: 20px;
+    }
+    .form-title h1{
+        font-size: 40px;
+        margin-bottom: 14px;
+    }
+    .collection_statement{
+        margin: 0px 5px;
+    }
+    .container {
+        background: #fff;
+        padding: 15px 15px 0 15px;
+        z-index: 9;
+        margin: 0 0 100px 0;
+    }
+    #webform-client-form-517{
+        margin-bottom: 0px;
+    }
+    .msf-fotter{
+        padding: 15px;
+    }
+    .fotter_menu li a {
+        color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        padding: 0;
+        width: 27px;
+        height: 27px;
+        line-height: 28px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .fotter_menu li h2 {
+        color: #fff;
+        font-size: 13px;
+        margin: 0;
+        line-height: 31px;
+    }
+    .copyright {
+        margin-top: 17px;
+        text-align: left;
+        line-height: 23px;
+    }
+}
