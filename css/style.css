@@ -200,16 +200,28 @@ section#block-footerbottomtextfirst {
     opacity: 1;
     margin-left: 15px;
 }
-.form-title h1{
-    font-size: 54px;
-    margin-bottom: 14px;
+.form-title h1 {
+    font-size: 53px;
+    margin-top: 0px;
+    line-height: inherit;
 }
 .form-title h1 p{
     font-size: 25px;
     color: #fff;
     margin-top: 15px;
 }
-.form-label-1{}
+#webform-component-donor-information legend{
+    margin-bottom: 5px;
+}
+.back_btn a{
+    padding: 0px 15px;
+    color: #605c5c;
+    font-size: 15px;
+    cursor: pointer;
+}
+.back_btn{
+    margin-bottom: 12px;
+}
 @media (max-width:600px){
     .form-title h1 p{
         color: #000;

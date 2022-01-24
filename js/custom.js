@@ -1,6 +1,17 @@
 // custome js
 $('#webform-component-donation--recurring-amount').hide();
 $('#form_part').hide();
+$("#back_btn").click(function() {
+    var form_second_part = document.getElementById("form_part");
+    var form_first_part = document.getElementById("webform-component-donation");
+    if(form_first_part.style.display === "none") {
+        form_second_part.style.display = "none";
+        form_first_part.style.display = "block";
+    } else {
+        form_first_part.style.display = "none";
+        form_second_part.style.display = "block";
+    }
+});
 $("#donate_now").click(function() {
     // validate if any donation amount is set or not
     if (!$("input[name='donateAmount']:checked").val()) {

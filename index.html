@@ -10,7 +10,11 @@
 	<meta property="og:description" content="" />
 	<link rel="canonical" href="" />
 	<link rel="shortlink" href="" />
-	<link rel="shortcut icon" href="images/apple-touch.png" type="image/png" />
+	<link rel="icon" href="images/fav1.png" sizes="32x32" />
+	<link rel="icon" href="images/fav1.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="images/fav1.png" />
+	<meta name="msapplication-TileImage" content="images/fav1.png" />
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
@@ -28,10 +32,13 @@
 		<header>
 			<a href="#top_heading"> <img src="images/header_msf_logo.png" alt="MSFUSA" id="logo" /></a>
 		</header>
-		<div class="hero-background" style="background-image: url('images/MSB63186_Medium.jpg');"></div>
+		<div class="hero-background" style="background-image: url('images/MSF262172_Medium.jpg');"></div>
 		<div class="form-title">
-			<h1>Your donation matters: <br><p>Your support enables us to help people
-				who need it the most.</p></h1>
+			<h1>Your donation matters.
+				<!-- : 
+				<br><p>Your support enables us to help people
+				who need it the most. -->
+			</p></h1>
 			</div>
 	</div>
 	<div class="container--outer">
@@ -66,7 +73,7 @@
 														<div class="form-item form-type-radio form-item-submitted-donation-recurs-monthly control-group">
 															<input type="radio" id="edit-submitted-donation-recurs-monthly-2" name="submitted[donation][recurs_monthly]" value="recurs" />
 															<label class="option" for="edit-submitted-donation-recurs-monthly-2">Monthly </label>
-															<div class="description"></div>
+															<div class="description">Increase the impact of your gift. Make it monthly. </div>
 														</div>
 													</div>
 												</div>
@@ -75,15 +82,15 @@
 													<div id="edit-submitted-donation-amount">
 														<div class="form-item form-type-radio form-item-submitted-donation-amount control-group">
 															<input type="radio" id="edit-submitted-donation-amount-1" name="donateAmount" value="2500" />
-															<label class="option" for="edit-submitted-donation-amount-1">₹ 2500 <span style="font-weight:bold;font-size:1.19em;">></span></label>
+															<label class="option" for="edit-submitted-donation-amount-1">₹ 2500 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-amount control-group">
 															<input type="radio" id="edit-submitted-donation-amount-2" name="donateAmount" value="5000" checked="checked" />
-															<label class="option" for="edit-submitted-donation-amount-2">₹ 5000 <span style="font-weight:bold;font-size:1.19em;">></span></label>
+															<label class="option" for="edit-submitted-donation-amount-2">₹ 5000 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-amount control-group">
 															<input type="radio" id="edit-submitted-donation-amount-3" name="donateAmount" value="10000" />
-															<label class="option" for="edit-submitted-donation-amount-3">₹ 10000 <span style="font-weight:bold;font-size:1.19em;">></span></label>
+															<label class="option" for="edit-submitted-donation-amount-3">₹ 10000 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item webform-component webform-component-textfield control-group" id="donation--other-amount">
 															<label for="edit-submitted-donation-other-amount">Enter Amount </label>
@@ -97,11 +104,11 @@
 													<div id="edit-submitted-donation-recurring-amount">
 														<div class="form-item form-type-radio form-item-submitted-donation-recurring-amount control-group">
 															<input type="radio" id="edit-submitted-donation-recurring-amount-1" name="donateAmount" value="500" />
-															<label class="option" for="edit-submitted-donation-recurring-amount-1">₹ 500 <span style="font-weight:bold;font-size:1.19em;">></span></label>
+															<label class="option" for="edit-submitted-donation-recurring-amount-1">₹ 500 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-recurring-amount control-group">
 															<input type="radio" id="edit-submitted-donation-recurring-amount-2" name="donateAmount" value="800" checked="checked" />
-															<label class="option" for="edit-submitted-donation-recurring-amount-2">₹ 800 <span style="font-weight:bold;font-size:1.19em;">></span> </label>
+															<label class="option" for="edit-submitted-donation-recurring-amount-2">₹ 800 <span style="font-weight:bold;font-size:1.19em;"></span> </label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-recurring-amount control-group">
 															<input type="radio" id="edit-submitted-donation-recurring-amount-3" name="donateAmount" value="1000" />
@@ -126,7 +133,9 @@
 													Note : All the funds collected are disbursed through the central pool, and are non ear-marked.
 													</p>
 												</legend>
-
+												<div class="back_btn">
+													<a id="back_btn"> <i class="fa fa-arrow-left"></i> Back</a>
+												</div>
 												<div id="form1">
 													<div class="form-row">
 														<div class="col-sm-2">
@@ -536,9 +545,6 @@
                         </li>
                         <li class="expanded dropdown">
                         <a target="_blank" href="https://www.instagram.com/msfindia/"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="expanded dropdown">
-                        <a target="_blank" href="https://plus.google.com/+msfindia"><i class="fa fa-google-plus"></i></a>
                         </li>
                         <li class="expanded dropdown">
                         <a target="_blank" href="http://www.msfindia.in/"><i class="fa fa-rss"></i></a>
