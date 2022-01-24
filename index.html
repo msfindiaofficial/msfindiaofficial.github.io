@@ -81,15 +81,15 @@
 													<label for="edit-submitted-donation-amount">Please select donation amount </label>
 													<div id="edit-submitted-donation-amount">
 														<div class="form-item form-type-radio form-item-submitted-donation-amount control-group">
-															<input type="radio" id="edit-submitted-donation-amount-1" name="donateAmount" value="2500" />
+															<input type="radio"  class="donation_value_checked" id="edit-submitted-donation-amount-1" name="donateAmount" value="2500" />
 															<label class="option" for="edit-submitted-donation-amount-1">₹ 2500 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-amount control-group">
-															<input type="radio" id="edit-submitted-donation-amount-2" name="donateAmount" value="5000" checked="checked" />
+															<input type="radio" class="donation_value_checked" id="edit-submitted-donation-amount-2" name="donateAmount" value="5000" checked="checked" />
 															<label class="option" for="edit-submitted-donation-amount-2">₹ 5000 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-amount control-group">
-															<input type="radio" id="edit-submitted-donation-amount-3" name="donateAmount" value="10000" />
+															<input type="radio" class="donation_value_checked" id="edit-submitted-donation-amount-3" name="donateAmount" value="10000" />
 															<label class="option" for="edit-submitted-donation-amount-3">₹ 10000 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item webform-component webform-component-textfield control-group" id="donation--other-amount">
@@ -103,15 +103,15 @@
 													<label for="edit-submitted-donation-recurring-amount">Please select donation amount  </label>
 													<div id="edit-submitted-donation-recurring-amount">
 														<div class="form-item form-type-radio form-item-submitted-donation-recurring-amount control-group">
-															<input type="radio" id="edit-submitted-donation-recurring-amount-1" name="donateAmount" value="500" />
+															<input type="radio" class="donation_value_checked" id="edit-submitted-donation-recurring-amount-1" name="donateAmount" value="500" />
 															<label class="option" for="edit-submitted-donation-recurring-amount-1">₹ 500 <span style="font-weight:bold;font-size:1.19em;"></span></label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-recurring-amount control-group">
-															<input type="radio" id="edit-submitted-donation-recurring-amount-2" name="donateAmount" value="800" checked="checked" />
+															<input type="radio" class="donation_value_checked" id="edit-submitted-donation-recurring-amount-2" name="donateAmount" value="800" checked="checked" />
 															<label class="option" for="edit-submitted-donation-recurring-amount-2">₹ 800 <span style="font-weight:bold;font-size:1.19em;"></span> </label>
 														</div>
 														<div class="form-item form-type-radio form-item-submitted-donation-recurring-amount control-group">
-															<input type="radio" id="edit-submitted-donation-recurring-amount-3" name="donateAmount" value="1000" />
+															<input type="radio" class="donation_value_checked" id="edit-submitted-donation-recurring-amount-3" name="donateAmount" value="1000" />
 															<label class="option" for="edit-submitted-donation-recurring-amount-3">₹ 1000 <span style="font-weight:bold;font-size:1.19em;">></span> </label>
 														</div>
 														<div class="form-item webform-component webform-component-textfield control-group" id="donation--other-amount1">
@@ -581,16 +581,19 @@
 	<script src="js/custom.js"></script>
 	<script>
 		$("#edit-submitted-donation-other-amount").keyup(function(event) {
-			if ($('input[name=donateAmount]:checked').length > 0) {
-				$("input:radio[name=donateAmount]:checked")[0].checked = false;
+			if ($('input[class=donation_value_checked]:checked').length > 0) {
+				$("input:radio[class=donation_value_checked]:checked")[0].checked = false;
 			}
+			document.getElementById('edit-submitted-donation-other-amount1').value = '';
 		});
 		$("#edit-submitted-donation-other-amount1").keyup(function(event) {
-			if ($('input[name=donateAmount]:checked').length > 0) {
-				$("input:radio[name=donateAmount]:checked")[0].checked = false;
+			if ($('input[class=donation_value_checked]:checked').length > 0) {
+				$("input:radio[class=donation_value_checked]:checked")[0].checked = false;
 			}
+			document.getElementById('edit-submitted-donation-other-amount').value = '';
 		});
-		$("input[name=donateAmount]").click(function(){
+		$("input[class=donation_value_checked]").click(function(){
+			console.log("culprit");
 			document.getElementById('edit-submitted-donation-other-amount').value = '';
 			document.getElementById('edit-submitted-donation-other-amount1').value = '';
    		});
