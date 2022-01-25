@@ -122,7 +122,7 @@ section#block-footerbottomtextfirst {
     font-weight: bold;
     text-align: center;
     border: 0;
-    width: 100%;
+    width: 100% !important;
 }
 #edit-submitted-donation-recurs-monthly input:checked + label::after {
     display: block;
