@@ -64,6 +64,12 @@ $("#donate_now").click(function() {
 $("#edit-submitted-donation-recurs-monthly-2").click(function() {
     var x = document.getElementById("webform-component-donation--recurring-amount");
     var y = document.getElementById("webform-component-donation--amount");
+
+    if ($('input[class=donation_value_checked]:checked').length > 0) {
+        $("input:radio[class=donation_value_checked]:checked")[0].checked = false;
+    }
+    document.getElementById('edit-submitted-donation-other-amount').value = '';
+
     if(x.style.display === "none") {
         x.style.display = "block";
         y.style.display = "none";
@@ -75,6 +81,12 @@ $("#edit-submitted-donation-recurs-monthly-2").click(function() {
 $("#edit-submitted-donation-recurs-monthly-1").click(function() {
     var x = document.getElementById("webform-component-donation--recurring-amount");
     var y = document.getElementById("webform-component-donation--amount");
+
+    if ($('input[class=donation_value_checked]:checked').length > 0) {
+        $("input:radio[class=donation_value_checked]:checked")[0].checked = false;
+    }
+    document.getElementById('edit-submitted-donation-other-amount1').value = '';
+    
     if(y.style.display === "none") {
         y.style.display = "block";
         x.style.display = "none";
